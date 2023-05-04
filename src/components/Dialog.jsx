@@ -23,10 +23,7 @@ export default function Dialog() {
   return (
     <>
       {dialogStatus && (
-        <dialog
-          className="grid z-40 place-items-center w-screen h-screen inset-0 bg-black bg-opacity-70 backdrop-blur-lg"
-          open
-        >
+        <dialog className="dialog-container" open>
           <div className="container w-max p-6 bg-white text-black rounded-lg text-center">
             <h2 className="text-2xl font-bold mb-3">Welcome to MemoryGame</h2>
             <p>Insert a username</p>
@@ -40,9 +37,7 @@ export default function Dialog() {
                 ref={nameRef}
                 className="border-2 border-gray-700 w-full rounded-md p-1 m-2"
               />
-              <button className="table m-auto w-full my-0 mx-2 bg-blue-700 text-white py-2 px-5 rounded-md hover:bg-blue-900">
-                Play!
-              </button>
+              <button className="button-bg-blue">Play!</button>
             </form>
           </div>
         </dialog>

@@ -24,11 +24,7 @@ const Card = ({
       }`}
       onClick={handleClick}
     >
-      <div className="card-face card-font-face card-font-face-commons">
-        <p className="text-center text-2xl sm:text-4xl font-semibold text-white">
-          ◈
-        </p>
-      </div>
+      <div className="card-face card-font-face card-font-face-commons"></div>
       <div className="card-face card-back-face m-1 rounded-lg">
         <Image
           src={image}

@@ -1,0 +1,28 @@
+.card{
+  position: relative;
+}
+
+.card-face.card-font-face{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.card-face.card-back-face{
+  position: absolute;
+  inset: 0;
+  z-index: 0;  
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped .card-font-face{
+  opacity: 0;
+}
+
+.card.is-inactive {  
+  opacity: 0.7;    
+  cursor: not-allowed;  
+}

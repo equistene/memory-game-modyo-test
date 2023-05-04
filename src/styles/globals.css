@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./card.css";
+
+@layer components {
+  .card-font-face-commons {
+    @apply aspect-square grid place-items-center m-1 bg-sky-800 rounded-md hover:bg-sky-950 transition-all;
+  }
+
+  .card-base{
+    @apply aspect-square border-sky-500 p-4 bg-sky-200 rounded-lg shadow-xl cursor-pointer transition-all;
+  }
+}

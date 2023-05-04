@@ -6,14 +6,14 @@ export default function Footer() {
     <>
       <footer className="mt-5">
         <p className="flex justify-center gap-1 text-xs text-white">
-          Developed by Cristian Berrios - Source code on
+          Code by Cristian Berrios -
           <Link
             className="underline hover:no-underline"
             href="https://github.com/equistene/memory-game-modyo-test"
             target="_blank"
             title="View repository"
           >
-            Github
+            Source
           </Link>
         </p>
       </footer>

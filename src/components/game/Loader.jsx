@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import cardImg from "../../../public/images/card-load.png";
 
 export default function Loader() {
   const cards = [];
@@ -9,7 +11,14 @@ export default function Loader() {
         id="card"
         className="aspect-square rounded-lg overflow-hidden grid place-items-center bg-gray-200"
       >
-        <p className="text-2xl">⏳</p>
+        <Image
+          src={cardImg}
+          alt="loading"
+          width="400"
+          height="400"
+          priority={true}
+          className="object-cover rounded-lg w-full h-full aspect-square opacity-30"
+        />
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Image from "next/image";
+import cardImg from "../../../public/images/card-back.png";
 
 const Card = ({
   image,
@@ -24,7 +25,16 @@ const Card = ({
       }`}
       onClick={handleClick}
     >
-      <div className="card-face card-font-face card-font-face-commons"></div>
+      <div className="card-face card-font-face card-font-face-commons">
+        <Image
+          src={cardImg}
+          alt={slug}
+          width="400"
+          height="400"
+          priority={true}
+          className="object-cover rounded-lg w-full h-full aspect-square opacity-30"
+        />
+      </div>
       <div className="card-face card-back-face m-1 rounded-lg">
         <Image
           src={image}

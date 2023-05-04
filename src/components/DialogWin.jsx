@@ -12,16 +12,16 @@ export default function DialogWin() {
       <dialog className="dialog-container" open>
         <div className="container w-max p-6 bg-white text-black rounded-lg text-center uppercase">
           <h2 className="text-3xl sm:text-5xl font-bold mb-3">
-            🎊 ¡You win! 🎊
+            🎊 ¡You won! 🎊
           </h2>
 
-          <p className="mb-5">{currentPlayer}, want to play again?</p>
+          <p className="mb-5">want to play again, {currentPlayer}?</p>
 
           <button
             className="button-bg-blue"
             onClick={() => router.reload(window.location.pathname)}
           >
-            Restart game 🤘
+            🤘 Play again 🤘
           </button>
         </div>
       </dialog>

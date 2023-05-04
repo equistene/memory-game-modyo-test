@@ -15,7 +15,7 @@ export default function DialogWin() {
             🎊 ¡You win! 🎊
           </h2>
 
-          <p className="mb-5">want to play again?</p>
+          <p className="mb-5">{currentPlayer}, want to play again?</p>
 
           <button
             className="button-bg-blue"
